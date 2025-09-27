@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Marchise';
+    src: url('./assets/Font/MarchiseTrial-Bold.ttf') format('truetype');
+}
+
+.font-marchise {
+    font-family: 'Marchise', sans-serif;
+}
+
+@keyframes slideOut {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+.alert-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: green;
+    animation: slideOut 3s linear forwards;
+}
